@@ -1,1 +1,1 @@
-# DistributedInformationSystems
+# Distributed Information Systems
