@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+
+        <File name="logfile" fileName="/home/olesya/IdeaProjects/xmlparser.log" append = "false">
+            <PatternLayout pattern = "%d{yyyy-MM-dd HH:mm:ss} %5p %c{1} - %m%n" />
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="logfile"/>
+<!--
+            <Append>false</Append>
+-->
+        </Root>
+    </Loggers>
+</Configuration>
