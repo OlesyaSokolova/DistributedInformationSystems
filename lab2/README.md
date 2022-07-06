@@ -11,8 +11,8 @@
 К проекту подключен jdbc драйвер posgtgresql. Использется DriverManager
 для получения соединений.  
 Разработана схема данных базы SQL для хранения объектов, определенных [схемой OSM](lab2part2/src/main/schema/OSMSchema.xsd).  
-Создан [класс](lab2/lab2part2/src/main/java/ru/nsu/fit/sokolova/dis/utils/DataBaseManager.java), ответственный за инициализацию БД с помощью DDL SQL.  
-Созданы [классы DAO](lab2/lab2part2/src/main/java/ru/nsu/fit/sokolova/dis/dao) для работы с таблицами основных сущностей OSM и
+Создан [класс](lab2part2/src/main/java/ru/nsu/fit/sokolova/dis/utils/DataBaseManager.java), ответственный за инициализацию БД с помощью DDL SQL.  
+Созданы [классы DAO](lab2part2/src/main/java/ru/nsu/fit/sokolova/dis/dao) для работы с таблицами основных сущностей OSM и
 сохранению их в БД (имплементируют интерфейс ModelDao.java).  
 Реализован загрузчик данных элементов node в БД с использованием трех стратегий, замерены скорости вставки (записей в секунду):    
   1. Конструирование INSERT как строки и исполнение Statement.exequteQuery (стартегия "STRING");
