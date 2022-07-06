@@ -14,7 +14,7 @@
 Создан [класс](lab2part2/src/main/java/ru/nsu/fit/sokolova/dis/utils/DataBaseManager.java), ответственный за инициализацию БД с помощью DDL SQL.  
 Созданы [классы DAO](lab2part2/src/main/java/ru/nsu/fit/sokolova/dis/dao) для работы с таблицами основных сущностей OSM и
 сохранению их в БД (имплементируют интерфейс ModelDao.java).  
-Реализован загрузчик данных элементов node в БД с использованием трех стратегий, замерены скорости вставки (записей в секунду):    
+Реализованы [загрузчики](lab2part2/src/main/java/ru/nsu/fit/sokolova/dis/inserters/impl) данных элементов node в БД с использованием трех стратегий, замерены скорости вставки (записей в секунду):    
   1. Конструирование INSERT как строки и исполнение Statement.exequteQuery (стартегия "STRING");
   2. Использование PreparedStatement (стратегия "PREPARED_STATEMENT");
   3. Использование batch механизма и вставка порциями данных (стратегия "BATCH").
