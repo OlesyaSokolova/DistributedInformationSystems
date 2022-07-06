@@ -1,4 +1,4 @@
-# JDBC template, hibernate & REST service
+# JDBC template, REST service
 
 Использованы результаты предыдущих задач (потоковое чтение JAXB объектов из XML исохранение в БД).  
 Созданы Entity для таблиц в БД (Node, Relation, Way). Для хранения tag создана независимая сущность Tag, связанная с Node.  
